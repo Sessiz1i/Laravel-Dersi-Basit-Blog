@@ -39,7 +39,7 @@
 						<tr>
 							<td>{{$category->name}}</td>
 							<td>{{$category->articleCount()}}</td>
-							<td>
+							<td style="min-width:170px; width:170px;">
 
 								<center>
 									<input class="switch" type="checkbox" category-id="{{$category->id}}" @if($category->status==1) checked @endif data-toggle="toggle" data-on="Aktif" data-off="Pasif" data-onstyle="success" data-offstyle="danger" data-width="62" data-size="small">

@@ -22,12 +22,12 @@
                     <tbody>
                     @foreach($articles as $article)
                     <tr>
-                        <td><img width="200" src="{{asset($article->image)}}"alt="Resim"></td>
-                        <td>{{$article->title}}</td>
+                        <td style="width:200px"><img width="200" src="{{asset($article->image)}}"alt="Resim"></tdwidth:500px>
+                        <td style="width:500px">{{$article->title}}</td>
                         <td>{{$article->getCategory->name}}</td>
                         <td>{{$article->created_at->diffForHumans()}}</td>
                         <td>{{$article->hit}}</td>
-                        <td>
+                        <td style="min-width:170px; width:170px;">
                             <center>
                                 <input class="switch" type="checkbox" article-id="{{$article->id}}" @if($article->status==1) checked @endif data-toggle="toggle" data-on="Aktif" data-off="Pasif" data-onstyle="success" data-offstyle="danger" data-width="62" data-size="small">
                                 <a href="{{route('single',[$article->getCategory->slug,$article->slug])}}" title="Görüntüle" target="_blank" class="btn btn-sm btn-dark"><i class="fa fa-sm fa-eye"></i></a>
