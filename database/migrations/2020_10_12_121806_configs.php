@@ -25,7 +25,7 @@ class Configs extends Migration
             $table->string('linkedin')->nullable();
             $table->string('youtube')->nullable();
             $table->string('instagram')->nullable();
-            $table->timestamps()->now();
+            $table->timestamps();
         });
     }
 

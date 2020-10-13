@@ -23,6 +23,7 @@ class Homepage extends Controller
 	    {
 	        return redirect()->to('site-bakimda')->send();             /** TODO Site Bakımda */
 	    }
+        view()->share('config',Config::find(1));
 		view()->share('pages',Page::whereStatus(1)->orderBy('order','ASC')->get());
 		view()->share('categories',Category::whereStatus(1)->inRandomOrder()->get());
 	}
