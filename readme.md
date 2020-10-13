@@ -1,2 +1,2 @@
-Laravel Dersi Basit Blog
-ilk deneme projesi
+# Laravel Dersi Basit Blog
+# ilk deneme projesi
